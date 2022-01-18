@@ -1,12 +1,12 @@
-San Francisco
-Hamburg
-New Delhi
-Bristol
-Manchester
-Edinburgh
-Philadelphia
-Madrid
-Leeds
+const data=[San Francisco,
+Hamburg,
+New Delhi,
+Bristol,
+Manchester,
+Edinburgh,
+Philadelphia,
+name:Madrid
+Leeds,
 Berlin
 Buenos Aires
 Barcelona
@@ -175,3 +175,4 @@ Sofia
 El Paso
 Brasília
 Salvador
+]
