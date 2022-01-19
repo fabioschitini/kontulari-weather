@@ -12,13 +12,10 @@ const SearchBox=(props)=> {
   }
 
   const handleOnSelect=(location)=>{
-    console.log(`locationnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn`)
-    console.log(location.name)
     props.setLoading(true)
-api.get(`/?locations=${location.name}`)
+api.get(`/?location=${location.name}`)
 .then(forecast=>{
-  console.log(forecast)
-  console.log(forecast.data)
+  
   props.setForecast(forecast.data)
 })
 .catch(err=>{
@@ -30,6 +27,7 @@ api.get(`/?locations=${location.name}`)
   }
   return (
     <Containers>
+      <Title>Weather App</Title>
       <ReactSearchAutocomplete
       items={locations}
       onSearch={handleOnSearch}
@@ -42,10 +40,15 @@ api.get(`/?locations=${location.name}`)
 }
 
 const Containers=styled.div`
-
-
-
-
+width: 700px;
+text-align: center;
+margin: auto;
+`
+const  Title=styled.h1`
+font-size: 60px;
+border-top-style: solid;
+padding-top: 90px;
+padding-bottom: 50px;
 `
 
 export default SearchBox;
