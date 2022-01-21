@@ -23,6 +23,7 @@ const WeatherForecast= (props)=> {
 const Container=styled.div`
 text-align:center;
 font-size:30px;
+
 `
 const Icon=styled.img`
 padding-left:20px;

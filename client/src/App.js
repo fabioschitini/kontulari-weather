@@ -69,6 +69,7 @@ const LoadingText=styled.h1`
 font-size: 50px;
 padding: 80px;
 text-align:center;
+color:white;
 `
 
 const BackGround=styled.img`

@@ -33,7 +33,7 @@ api.get(`/?location=${location.name}`)
       onSearch={handleOnSearch}
        onSelect={handleOnSelect}
        autofocus
-       placeholder='Escreva a localizacao que desejar'
+       placeholder='Write the city where you want to see the weather...'
        />
      </Containers>
   );
@@ -49,6 +49,7 @@ font-size: 60px;
 border-top-style: solid;
 padding-top: 90px;
 padding-bottom: 50px;
+color:white;
 `
 
 export default SearchBox;
